@@ -45,13 +45,13 @@ function userInputs() {
   if (inputsArray.length == 1) {
     resultDom.innerHTML = `Hai indovinato solo il numero ${inputsArray.join(
       ", "
-    )}. Il tuo punteggio è ${counter}.`;
+    )}. Il tuo punteggio è ${scoreCounter}.`;
   } else if (inputsArray.length == 0) {
-    resultDom.innerHTML = `Non hai indovinato nessun numero. Il tuo punteggio è ${counter}.`;
+    resultDom.innerHTML = `Non hai indovinato nessun numero. Il tuo punteggio è ${scoreCounter}.`;
   } else {
-    resultDom.innerHTML = `Numeri indovintati: ${inputsArray.join(
+    resultDom.innerHTML = `Numeri indovinati: ${inputsArray.join(
       ", "
-    )}. Il tuo punteggio è ${counter}.`;
+    )}. Il tuo punteggio è ${scoreCounter}.`;
   }
 }
 
